@@ -1,0 +1,47 @@
+ul.dropdown-menu li > a:hover,
+ul.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a,
+ul.dropdown-menu .active > a,
+ul.dropdown-menu .active > a:hover {
+  background: none;
+  background-color: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff',endColorstr='#00ffffff',GradientType=1);
+}
+.sj-news-scroller .news-scroller {
+  direction: ltr;
+}
+.sj-news-scroller .news-scroller .scroller-container .iviewSlider .iview-caption .caption-contain a.ns-item-title,
+.sj-news-scroller .news-scroller .scroller-container .iviewSlider .iview-caption .caption-contain a {
+  font-size: 28px;
+}
+.sj-news-scroller .news-scroller .scroller-container .iviewSlider .iview-caption .caption-contain a.ns-item-title {
+  font-size: 70px;
+}
+#mod-finder-searchform input.search-query {
+  background: #ECECEC;
+}
+.div.sj-videobox .sj-video-current iframe {
+  position: relative;
+  z-index: 1;
+}
+.rtl div.news-scroller .scroller-container.nav-style1 .iview-controlNav {
+  bottom: 60px;
+}
+.rtl div.module div.news-scroller .scroller-container.nav-style1 .iview-controlNav {
+  right: 15px !important;
+}
+.rtl div.modal.fade.in .show-box .sj_box_content form#member_registration label span,
+.rtl div.modal.fade.in .show-box .sj_box_content form#login_form .login_input label span {
+  border-radius: 5px 0 0 5px !important;
+}
+.rtl #xmap ul li:before {
+  line-height: 18px;
+}
+.rtl div.contact .contact-miscinfo .contact-misc .contact-us .address:before {
+  right: 0px;
+  left: auto;
+}
+.rtl div.contact .contact-miscinfo .contact-misc .contact-us .address:after {
+  left: 0px;
+  right: auto;
+}

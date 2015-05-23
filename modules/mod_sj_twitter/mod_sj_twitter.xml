@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>Sj Twitter</name>
+	<author>YouTech Company</author>
+	<creationDate>January 2013</creationDate>
+	<copyright>Copyright (c) 2013 YouTech Company</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.smartaddons.com</authorUrl>
+	<version>1.0</version>
+	<description>SJ_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_sj_twitter">mod_sj_twitter.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>language</folder>
+	</files>
+	<languages />
+	<config>
+		<fields name="params">
+			<fieldset name="general_settings" label="General Setting">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+					
+                <field name="theme" type="list" class="btn-group" default="light" label="Theme" description="Select theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </field>
+                <!--field name="width" type="text" default="300" label="Width" description="width of module" />
+				<field name="height" type="text" default="500" label="Height" description="height of module" /-->
+                <field name="limit" type="text" default="4" label="Tweets Count" description="Number of Tweets to Display"/>
+				<field name="href" type="text" default="https://twitter.com/smartaddons" label="Link" description="your link twiter" />
+                <field name="widgets_id" type="text" default="321482620284321792" label="Widgets Id" description="Your widgets id" />
+				<field name="footer_text" type="text" default="Tweets by @smartaddons" label="Footer Text" description="Footer Text" />
+                <!--field name="key_search" type="text" default="smartaddons" label="Keys Search" description="Keys Search" /-->
+				<field name="pretext" type="textarea" default="" label="Pre-text" description="Intro text of module" cols="40" rows="4" filter="raw" />
+                <field name="posttext" type="textarea" default="" label="Post-text" description="Footer text of module" cols="40" rows="4" filter="raw" />  
+            </fieldset>             		
+		</fields>
+	</config>
+</extension>

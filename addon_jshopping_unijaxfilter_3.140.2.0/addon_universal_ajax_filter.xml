@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="file" method="upgrade">
+	<name>JoomShopping - Universal Ajax Filter</name>
+	<author>Dmitry Stashenko</author>
+	<creationDate>July, 2013</creationDate>
+	<copyright>Copyright © Nevigen.com. All rights reserved.</copyright>
+	<license>Proprietary. Copyrighted Commercial Software</license>
+	<authorEmail>support@nevigen.com</authorEmail>
+	<authorUrl>http://nevigen.com/</authorUrl>
+    <version>3.140.2.0</version>
+	<description><![CDATA[Developed & Powered by <a href="http://nevigen.com/" target="_blank">Nevigen.com</a>]]></description>
+	<scriptfile>addon_universal_ajax_filter.php</scriptfile>
+	<fileset>
+		<files>
+			<folder>administrator</folder>
+		</files>
+	</fileset>
+</extension>

@@ -1,0 +1,234 @@
+// Bootstrap mixins
+@import "../asset/bootstrap/less/mixins.less";
+@import "../asset/bootstrap/less/variables.less";
+// 2.Color Variables
+@import "color/variables_color.less";
+
+.fontsize_l{font-size: 18px;font-weight: 400;}
+.g-underline{font-size: 180%;font-weight: 400;}
+.b-block:after,
+.b-block:before{clear: both;display: table;content: "";}
+
+// 1.Page Team
+div.g-pageteam{line-height: 22px; margin: 0 4%;
+     hr{height: 5px;background: #ccc;}
+     h3.g-header{ font-size: 128.57%; font-weight: normal; text-transform: uppercase; margin: 20px 0; margin-top: 0px;}
+     .b-gettouch{background: #eee;border-bottom: 3px solid #ccc;border-right:1px solid #ccc;padding: 20px; margin: 1em 0 4em; .box-sizing(border-box);
+         .h-heading4{font-size: 130%;font-weight: normal;line-height: 24px;margin: 0;font-family: "Georgia";font-style: italic;}
+         .btn{height: 35px; line-height: 35px;overflow: hidden;text-overflow: ellipsis;
+               &:active{vertical-align: -16px;}
+         }
+     }
+     .b-ourteam{ margin-top: 20px;
+          [class*="span"]{margin-bottom: 50px;
+                .h-left{ float: left; margin-right: 25px;
+                  .h-image { overflow: hidden;
+                    img{ 
+                       &:hover{ .transition( all 0.3s ease-in-out 0s); .transform(scale(1.2) rotate(5deg));}
+                    }
+                  }
+                  .b-social{ background: @background1; text-align: center;
+                      a{ color: @linkColor2;}
+                        div.yt-socialbt{margin: 0px 1px;}    
+                   }                   
+                }
+               .h-title{margin:0;font-size: 18px; text-transform: capitalize; line-height: 110%; color: @linkColorHover; font-weight: normal; margin: 0 0 10px;}
+               .member{color: #a0a0a0;margin-bottom: 10px;}               
+          }
+     }
+     
+}
+
+// 2.Page About us
+div.g-pageabout{line-height: 22px; padding-bottom: 50px; margin:0;
+     hr{height: 3px;background: #999999;}
+
+     h3.g-header{ 
+        font-size: 342.83%; font-weight: normal; margin: 0 0 0px; border-bottom: 4px double @grayDarken; padding:0px 0 10px;
+        span{font-size: 30%; line-height: 25px; display: inline-block; padding: 0 15px;            
+            p{display: inline-block; margin: 0px;}
+        }
+      }
+      .intro-about{ margin: 40px 0; text-align: center; font-size: 128.57%;}
+     
+     .g-about{
+       .alst_item{ overflow: hidden;
+         .aitem{ width: 28.66%; float: left; margin:0  0 60px 7%;
+            &.first{margin: 0px;}
+            .item-inner{ padding: 25px; background: @background1; .border-radius(4px); color: @white;
+               &:hover{ background: #666; .transition( all 0.3s ease-in-out 0s);
+                  h3{border-color:lighten(#666666,25%); }
+               }
+               h3{ font-size: 128.57%; margin: 0 0 15px; font-weight: normal; text-transform: uppercase; padding: 10px 5px 20px; border-bottom: 1px solid lighten(@background1, 30%); position: relative;
+                  &:after{content: "";display: inline-block;width: 14px; height: 7px; position: absolute; bottom: -8px; left: 5px; background: url("../images/icons/arrow-about.png") repeat-x left center;}
+               }
+               
+            }
+         }
+       }
+      }
+
+     .b-ourteam{ margin-top: 20px;
+         .b-team-title{ font-size: 171.42%; margin: 0 0 25px; font-weight: normal;}
+          [class*="span"]{
+               .item-team{ margin:0 0 40px 0; padding-bottom: 35px; border-bottom: 1px solid #ccc; overflow: hidden;
+                  &.no-line{border: none; margin: 0px;}
+                  .h-left{ float: left; margin-right: 25px;
+                    .h-image { padding: 15px; border: 1px solid #ccc; border-radius: 5px;position: relative; z-index: 2; .transition( all 0.3s ease-in-out 0s);  .box-shadow(5px 6px 0 0 #ccc);
+                       // &:after{content: "";display: inline-block;position: absolute; z-index: -1; top: 8px; left: 8px; width: 100%;  height: 100%; background:#ccc; border-radius:5px; }
+                        .h-image-inner{ overflow: hidden;
+                           img{ 
+                              &:hover{ .transition( all 0.3s ease-in-out 0s); .transform(scale(1.2) rotate(5deg));}
+                           }
+                        }
+                        &:hover{ .box-shadow(5px 6px 0 0 @background1);
+                           //&:after{ background: @bacground1;}
+                           .h-image-inner img{ 
+                              &:hover{ .transition( all 0.3s ease-in-out 0s); .transform(scale(1.2) rotate(5deg));}
+                           }
+                        }
+                    }
+                    .b-social{ text-align: center; margin-top: 25px;                        
+                        div.yt-socialbt{margin: 0px 0px;}
+                        div.yt-socialbt a.cicle{ width: 21px;height: 21px; line-height: 21px; background: #666; color: #fff;
+                           border: none; box-shadow: none;
+                           &.small > i{ font-size: 18px; line-height: 18px;}
+                           &:hover{background: @background1;}
+                        }
+                     }                   
+                  }
+                 .h-title{margin:0;font-size: 128.57%;  text-transform: capitalize; line-height: 100%; font-weight: normal; margin: 0 0 3px;
+                  &:hover{ color: @linkColorHover;}
+                 }
+                 .member{color: #a0a0a0;margin-bottom: 10px;}
+               }
+          }
+     }
+     
+}
+
+// 3.Page gallary
+div.g-pagegallery{ margin: 0 4%;
+ h3.g-header{ font-size: 128.57%; font-weight: normal; text-transform: uppercase; margin: 20px 0; margin-top: 0px; }
+}
+
+// 4.Page video
+div.g-pagevideo{ margin: 0 4%;
+  h3.g-header{ font-size: 128.57%; font-weight: normal; text-transform: uppercase; margin: 20px 0 30px; margin-top: 0px;}
+  .list-video{ margin-top: 20px;
+          [class*="span"]{margin-bottom: 50px !important;
+              .item{                  
+                  .item-img{ width: 140px; height: auto; display: inline-block; position: relative; float: left; margin-right: 15px; margin-bottom: 15px;
+                    a.video-switch{ display: inline-block; width: 42px; height: 42px;  .border-radius(50%); #translucent .background(#1a1a1a,0.9);  left: 37%;top:25%; position: absolute;
+                        &:after{ width: 40px; padding-left: 2px; height: 42px; line-height: 42px; margin: 0px;
+                            content: "\f04b"; font-size: 24px; color: @white; display: inline-block; font-family: 'FontAwesome'; margin: 0px;  text-align: center;
+                        }                        
+                    }
+                    &:hover a{#translucent .background(@background1,0.9);}
+                  }
+                  .video-header{ color: @linkColorHover;font-weight: normal;font-size: 100%;}
+
+                  span.timline{ display: block; color: #999; font-size: 85.71%;}
+                  h3.v-title{ margin: 5px 0 0;  font-weight: normal; font-size: 100%; line-height: 20px;} 
+
+                  .video-box{ width: 540px;}
+                  .yt-vimeo{ margin-right: 0px !important;}
+
+                  &:hover{
+                    h3.v-title{color: @linkColorHover;}                    
+                  } 
+              }
+          }
+     }
+
+}
+
+
+
+// Support RTL Languages
+// --------------------------------------------------
+.rtl{
+       #g-pageportfolio [class*="span"] .port-item-content a.readmore:after,
+       #g-pageservices article a.readmore:after{content: "\f104";}
+
+       //----------------
+          //---page video
+          div.g-pagevideo{
+               .list-video [class*="span"] .item{
+                    .item-img{ float: right; margin: 0 0 0 15px;
+                      //a.video-switch:after{ padding-left: 0px; padding-right: 2px;}
+                    }
+               } 
+          }
+          //---------------
+          //---page about us
+          div.g-pageabout{
+               .g-about .alst_item .aitem .item-inner h3:after{right: 5px ; left: auto;}
+               .b-ourteam [class*="span"] .item-team .h-left{
+                  float: right; margin-left: 25px; margin-right: 0px;
+                  .h-image{
+                     .box-shadow(-5px 6px 0 0 #ccc);
+                     &:hover{.box-shadow(-5px 6px 0 0 @background1);}
+                  }
+               }
+          }
+
+          //----------------
+          //---page g-pageteam
+          div.g-pageteam{
+              .b-ourteam [class*="span"] .h-left{ float: right; margin: 0 0 0 25px;}
+          }
+
+          div.g-pagevideo{
+            button.close{ float: left;}
+          }
+
+          //--------------
+         
+
+}
+
+// Support Responsive
+// --------------------------------------------------
+
+//Tablet portrait (768x1024) && Small tablet landscape (800x600) 
+@media (min-width: 768px) and (max-width: 979px) {
+     // Page Join Now
+     ul.c-step{
+          li{margin: 0 30px;}
+     }
+
+     // bonus page
+          div.g-pageteam .b-ourteam [class*="span"] .h-left{ float: none; margin: 0 0 20px 0 !important; display: inline-block;}
+          div.g-pagevideo .yt-vimeo.pull-left{ float: none !important;}
+          div.g-pagevideo .list-video [class*="span"] .item .item-img{ float: none;}
+          .yt-gallery ul li .item-gallery a h3.item-gallery-title{ left: -150% !important;}
+}
+
+// Small tablet portrait (600x800) & Mobile landscape (480x320)
+@media (max-width: 767px){
+       .yt-lightbox{float: none !important;}
+       #g-pageservices .span4{margin-bottom: 1em !important;}
+       #g-pageportfolio [class*="span"]{margin-bottom: 1em !important;
+              .port-item-img{display: inline-block;}
+       }
+       .yt-gallery ul li{width:auto !important;}
+       ul.c-step{
+              &:before{top:37%;}
+              li{ display: table-cell;}
+       }
+		  div.yt-lightbox.image-left{float: none;display: inline-block;margin: 0 0 15px;}
+      div.g-pageteam div.b-ourteam [class*="span"]{margin-bottom: 30px !important;}
+
+       // Bonus page
+         
+          div.g-pageabout .g-about .alst_item .aitem{ width: 100%; float: none !important; margin: 0 0 60px !important;}  
+          
+          div.g-pagevideo .yt-vimeo.pull-left{ float: none !important;}
+
+          div.g-pagevideo .list-video [class*="span"] .item .video-box{width: auto;}
+          
+          div.g-pageabout h3.g-header{ font-size: 214.28%;}
+
+
+}

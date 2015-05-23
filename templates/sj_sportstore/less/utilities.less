@@ -1,0 +1,73 @@
+
+/* Basic Reseting Classes */
+
+        .align-left{text-align: left !important;}
+        .align-right{text-align: right !important;}
+        
+        .align-center{text-align: center !important;}
+        
+	.noitalic {font-style: normal !important;}
+
+	.nobold {font-weight: normal !important;}
+
+	.nomarginall {margin-left: 0 !important;margin-right: 0 !important;margin-top: 0 !important;margin-bottom: 0 !important;}
+
+	.nopaddingall {padding-left: 0 !important;padding-right: 0 !important;padding-top: 0 !important;padding-bottom: 0 !important;}
+
+	.nomargintop {margin-top: 0 !important;}
+	
+	.poscenter {display: table;margin: 0 auto ;}
+	
+	.nomarginbottom {margin-bottom: 0 !important;}
+
+	.nomarginleft {margin-left: 0 !important;}
+
+	.nomarginright {margin-right: 0 !important;}
+
+	.nopaddingtop {padding-top: 0 !important;}
+
+	.nopaddingbottom {padding-bottom: 0 !important;}
+
+	.nopaddingleft {padding-left: 0 !important;}
+
+	.nopaddingright {padding-right: 0 !important;}
+        
+        /* Inline Thumbnails */
+        
+        .thumbnail.pull-left {margin: 0 10px 10px 0;}
+        
+        .thumbnail.pull-right {margin: 0 0 10px 10px;}
+	
+	//Wrapping Long URLs
+	.wrapurl(){
+		width:100%;
+		white-space: pre;           /* CSS 2.0 */
+		white-space: pre-wrap;      /* CSS 2.1 */
+		white-space: pre-line;      /* CSS 3.0 */
+		white-space: -pre-wrap;     /* Opera 4-6 */
+		white-space: -o-pre-wrap;   /* Opera 7 */
+		white-space: -moz-pre-wrap; /* Mozilla */
+		white-space: -hp-pre-wrap;  /* HP Printers */
+		word-wrap: break-word;      /* IE 5+ */
+	}
+	//Responsive Tables
+	#flip-scroll{
+		table.category  { width: 100%; border-collapse: collapse; border-spacing: 0; display: block; }
+		th, td { margin: 0; vertical-align: top; }
+		thead { display: block; float: left; }
+		tbody { display: block; width: auto; position: relative; overflow-x: auto; white-space: nowrap; }
+		tbody tr { display: inline-block; vertical-align: top;border-left: 1px solid #ccc;margin-left: -4px; }
+		th:last-child,td:last-child { border-bottom: 1px solid #babcbf; }
+		th { display: block; text-align: right; border-bottom: 0; border-left: 0;}
+		td { display: block; padding: 7px 10px 8px;min-height: 11px; text-align: left; border-left: 0; border-right: 0; border-bottom: 0;}
+	}
+	
+ 
+ 
+/* sort out borders */
+ 
+#flip-scroll th { border-bottom: 0; border-left: 0; }
+#flip-scroll td {  }
+#flip-scroll tbody tr { border-left: 1px solid #babcbf; }
+#flip-scroll th:last-child,
+#flip-scroll td:last-child { border-bottom: 1px solid #babcbf; }
